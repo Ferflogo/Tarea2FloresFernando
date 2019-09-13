@@ -4,6 +4,8 @@
 retornara suma, resta y multiplicacion
  en caso de que los valores sean A<B o (A o B) sean
  String retorna un -1'''
+
+
 def Ejercicio_1(A, B):
     # Condicion igual a String
     if(isinstance(A, str) or isinstance(B, str)):
@@ -19,4 +21,3 @@ def Ejercicio_1(A, B):
         return(A+B, A-B, A*B)
 # Si no se cumplieron las condiciones anteriores
 # retorna suma, resta y multiplicacion
-
