@@ -17,17 +17,30 @@ Git log: Ver versiones anteriores
 
 2) Que es Github? 
 
+Servicio en la nube, es una erramienta para desarrollo de codigo el cual facilita a desarrolladores a almacenar y administrar sus códigos, al igual que llevar un registro y control, para un mejor trabajo en equipo.
+
 3) Que es un branch? 
 
 Git branch <Nombre>: Genera una copia del archivo principal
+  
+  Los branch son "Ramas" en las cuales se pueden generar para modificar el codigo y unir una vez se este satisfecho con el funcionamiento.
   
 4) Que es un commit? 
 
 Git commit: Crear punto de control
 
+Por medio de este codigo se guarda o suben archivos.
+
 Crea comentarios con git commit -m, sin entrar a terminal. La primera vez que se ejecuta nos pedirá identificarnos (Usuario), por medio de un correo.
 
 5) Que se entiende cuando se dice que un archivo esta “staged”? 
+
+Dentro de git se divide en tre areas de trabajo Working Directory, Staging Area y Repository
+
+Esto se trabaja con tres estados: committed, modifie y staged. 
+
+Cuando se utiliza commit, git crea un nuevo objeto de commit utilizando los archivos del stage y establece el padre al commit actual. Staged es un archivo modificado esta listo para ir a la proxima area de trabajo.
+
 
 6) Que hace el comando git checkout?
 
@@ -35,6 +48,8 @@ Git checkout – <Nombre de Archivo>: Para revertir los cambios
 Git checkout <Nombre>: Se utiliza para cambiar el archivo a trabajar creado por medio del Branch. Se cambia entre “Ramas”
   
 7) Que hace el comando git stash?
+
+Git stash: Esta funcion se utiliza para salvar cambios que están comprometidos temporalmente, guardado provisional.
 
 8) Que hace el comando git add?
 
@@ -46,6 +61,8 @@ Git add . : Agrega todos los archivos
 Unit Testing es un método de prueba en el cual se prueban unidades de código individual, para determinar si estas funcionan.
 Por ejemplo en diseño estructurado o en diseño funcional una función o un procedimiento, en diseño orientado a objetos una clase. Esto sirve para asegurar que cada unidad funcione correctamente y eficientemente por separado.
 
+Pytest es un entorno de trabajo que permite probar tus codigos por medio de programas.
+
 Ventajas
 
 Reduce Bugs en nuevas y viejas implementaciones
@@ -55,4 +72,10 @@ Mejor diseño
 
 10) Bajo el contexto de pytest. Que es un “assert”? 
 
-11) Que es Flake 8? """
+Un assert es una bandera booleana la cual nos indica si una condicion se cumple o no. En pytest si assert es falso se detiene ese codigo del programa.
+
+
+11) Que es Flake 8? 
+
+Es un programa el cual prueba todo el codigo y muestra todos errores y malas practicas de programacion, tambien ayuda con consejos de codigos optimos para funciones especificas.
+"""
